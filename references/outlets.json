@@ -1,0 +1,115 @@
+[
+  {
+    "id": "jiqizhixin",
+    "name": "机器之心",
+    "emails": [
+      "liyazhou@jiqizhixin.com",
+      "zhaoyunfeng@jiqizhixin.com"
+    ],
+    "kind": "submission",
+    "evidence": "official",
+    "note": "AIxiv 官方历史文章明确公布投稿邮箱；默认选择一名编辑，不同时发送两份。",
+    "sources": [
+      "https://www.jiqizhixin.com/articles/2025-02-19-3"
+    ],
+    "checked_on": "2026-09-04"
+  },
+  {
+    "id": "qbitai",
+    "name": "量子位",
+    "emails": [
+      "ai@qbitai.com"
+    ],
+    "kind": "submission",
+    "evidence": "official",
+    "note": "官方投稿&爆料邮箱；邮件主题标注投稿或爆料。",
+    "sources": [
+      "https://www.qbitai.com/联系我们"
+    ],
+    "checked_on": "2026-09-04"
+  },
+  {
+    "id": "aiera",
+    "name": "新智元",
+    "emails": [
+      "daijia@aiera.com.cn",
+      "xiaoyunhong@aiera.com.cn"
+    ],
+    "kind": "inquiry",
+    "evidence": "official",
+    "note": "官方合作邮箱；不等于稿件投稿邮箱，官网另有寻求报道入口。",
+    "sources": [
+      "https://aiera.com.cn/aiera/"
+    ],
+    "checked_on": "2026-09-04"
+  },
+  {
+    "id": "cver",
+    "name": "CVer",
+    "emails": [],
+    "kind": "manual",
+    "evidence": "unverified",
+    "note": "暂无可靠统一投稿邮箱；用户提供的微信 CVer222 须自行核实，可走公众号后台。",
+    "sources": [
+      "https://2048ai.net/682fd74f606a8318e859eb75.html"
+    ],
+    "checked_on": "2026-09-04"
+  },
+  {
+    "id": "cvmart",
+    "name": "极市平台",
+    "emails": [
+      "developer@cvmart.net"
+    ],
+    "kind": "inquiry",
+    "evidence": "official",
+    "note": "官方联系我们邮箱；先咨询投稿途径，微信 cvmart3。",
+    "sources": [
+      "https://www.cvmart.net/community/detail/2872"
+    ],
+    "checked_on": "2026-09-04"
+  },
+  {
+    "id": "52cv",
+    "name": "我爱计算机视觉",
+    "emails": [
+      "amos@52cv.net"
+    ],
+    "kind": "submission",
+    "evidence": "secondary",
+    "note": "历史署名内容/转载有该投稿邮箱；正式投递前核实或由用户确认。",
+    "sources": [
+      "https://modelers.csdn.net/69a7ef187bbde9200b9df5cd.html",
+      "https://www.52cv.net/"
+    ],
+    "checked_on": "2026-09-04"
+  },
+  {
+    "id": "paperweekly",
+    "name": "PaperWeekly",
+    "emails": [
+      "hr@paperweekly.site"
+    ],
+    "kind": "submission",
+    "evidence": "secondary",
+    "note": "2026 署名内容文末有该邮箱；第三方托管，正式投递前核实或由用户确认；微信 pwbot02。",
+    "sources": [
+      "https://deepseek.csdn.net/6a28de5610ee7a33f27a0f7e.html"
+    ],
+    "checked_on": "2026-09-04"
+  },
+  {
+    "id": "valse",
+    "name": "VALSE",
+    "emails": [
+      "valse_official@163.com"
+    ],
+    "kind": "inquiry",
+    "evidence": "official",
+    "note": "VALSE 2026 官网联系邮箱，并未明确接收公众号稿件。",
+    "sources": [
+      "https://valser.org/2026/"
+    ],
+    "checked_on": "2026-09-04"
+  }
+]
