@@ -1,0 +1,61 @@
+{
+  "paper_sha256": "f5342fbdb2ac863a6de3787c3c00697a772db8ea07be80bce5462f10a56c0a1e",
+  "screenshots": [
+    {
+      "file": "authors-institutions.png",
+      "source": "https://arxiv.org/pdf/2608.06865v1",
+      "page": 1,
+      "original_label": "paper title authors and affiliations",
+      "clip_points_top_left": [
+        66,
+        92,
+        547,
+        167
+      ],
+      "dpi": 300,
+      "sha256": "d3b7ef340597fb9a6946d7c11e3613a439f6b60ecb37ee6e0cbe69c38694b17f"
+    },
+    {
+      "file": "main-results-table.png",
+      "source": "https://arxiv.org/pdf/2608.06865v1",
+      "page": 7,
+      "original_label": "Table 2",
+      "clip_points_top_left": [
+        50,
+        51,
+        297,
+        340
+      ],
+      "dpi": 300,
+      "sha256": "2f72a81b9c62f324267f4bd831f8a218a63768b515a1db3534d2f6342a6d1c7b"
+    },
+    {
+      "file": "ablation-table.png",
+      "source": "https://arxiv.org/pdf/2608.06865v1",
+      "page": 7,
+      "original_label": "Table 4",
+      "clip_points_top_left": [
+        316,
+        51,
+        562,
+        150
+      ],
+      "dpi": 300,
+      "sha256": "8f2f65f8369a23539fd43c0b42c6d21b9314fb020b8cf3fc681695337cd486de"
+    },
+    {
+      "file": "reasoning-ablation-table.png",
+      "source": "https://arxiv.org/pdf/2608.06865v1",
+      "page": 7,
+      "original_label": "Table 5",
+      "clip_points_top_left": [
+        316,
+        198,
+        562,
+        319
+      ],
+      "dpi": 300,
+      "sha256": "c11a421076e0e0b33be26909c36b353382d6d6d8f51156f13e9d2f3c10bec84a"
+    }
+  ]
+}
