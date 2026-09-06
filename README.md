@@ -120,19 +120,19 @@ python -m pip install -r requirements-docx.txt
 
 下列为截至 2026-09-06 的公开资料核对及用户提供记录；具体来源以各条目为准，邮箱和规则可能变更。
 
-| 平台 | 内置渠道 | 用途与证据 |
-| --- | --- | --- |
-| 机器之心 | z@jqzx.ai | 用户提供的 AIxiv 栏目截图明确列出的投稿邮箱，已替换旧地址；[栏目入口](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=MzA3MzI4MjgzMw==&scene=1&album_id=4328536051397804037&count=3#wechat_redirect) |
-| 量子位 | ai@qbitai.com | 官方投稿与爆料邮箱；主题应标注投稿或爆料 |
-| 新智元 | daijia@aiera.com.cn / xiaoyunhong@aiera.com.cn | 官方合作邮箱，默认仅咨询 |
-| CVer | 公众号后台等手动渠道 | 尚无可靠统一投稿邮箱 |
-| 极市平台 | developer@cvmart.net | 官方联系邮箱，默认仅咨询 |
-| 我爱计算机视觉 | amos@52cv.net | 历史署名内容与转载提供，正式投递前进一步核实或由用户确认 |
-| PaperWeekly | hr@paperweekly.site | 第三方托管的署名文章提供，正式投递前进一步核实或由用户确认 |
-| VALSE | valse_official@163.com | 会议官网联系邮箱，默认仅咨询 |
-| 图灵派对 | xuechaozou@foxmail.com | 用户指定的投稿邮箱；任务中记录为 user_confirmed，仍需最终 Word 审核及发送确认 |
+| 平台 | 内置渠道 |
+| --- | --- |
+| 机器之心 | z@jqzx.ai |
+| 量子位 | ai@qbitai.com |
+| 新智元 | daijia@aiera.com.cn / xiaoyunhong@aiera.com.cn |
+| CVer | 公众号后台等手动渠道 |
+| 极市平台 | developer@cvmart.net |
+| 我爱计算机视觉 | amos@52cv.net |
+| PaperWeekly | hr@paperweekly.site |
+| VALSE | valse_official@163.com |
+| 图灵派对 | xuechaozou@foxmail.com |
 
-完整来源、证据等级和说明见 [outlets.json](references/outlets.json)。咨询邮件也遵循人工审核与明确确认流程。选择多个平台时分别写稿、分别发信，不群发或互相抄送。
+渠道来源、核验日期和内部记录见 [outlets.json](references/outlets.json)。咨询邮件也遵循人工审核与明确确认流程。选择多个平台时分别写稿、分别发信，不群发或互相抄送。
 
 机器之心此次地址更新依据用户给出的截图及明确指示；微信栏目链接本次未能直接读取，不将其表述为已在线核验全文。图灵派对的邮箱依据用户提供，不冒充官网核验，也不代表已经完成写作风格校准。
 
