@@ -22,11 +22,22 @@
     ],
     "kind": "submission",
     "evidence": "official",
-    "note": "官方投稿&爆料邮箱；邮件主题标注投稿或爆料。",
+    "note": "官方关于我们页明确投稿/爆料邮箱 ai@qbitai.com，主题注明投稿或爆料；寻求报道页另列 qbitai@qq.com，未确认替换关系，不自动双投。",
     "sources": [
-      "https://www.qbitai.com/联系我们"
+      "https://www.qbitai.com/关于我们",
+      "https://www.qbitai.com/寻求报道"
     ],
-    "checked_on": "2026-09-04"
+    "checked_on": "2026-09-06",
+    "style_profile": "styles/qbitai.md",
+    "style_status": "sample_calibrated",
+    "other_public_channels": [
+      {
+        "address": "qbitai@qq.com",
+        "purpose": "submission",
+        "source": "https://www.qbitai.com/寻求报道",
+        "status": "official_alternative_not_default"
+      }
+    ]
   },
   {
     "id": "aiera",
@@ -37,11 +48,20 @@
     ],
     "kind": "inquiry",
     "evidence": "official",
-    "note": "官方合作邮箱；不等于稿件投稿邮箱，官网另有寻求报道入口。",
+    "note": "官方明确为合作邮箱，未确认普通稿件直投用途；官网寻求报道指向飞书表单，已核对链接但本次未读到表单内容。",
     "sources": [
       "https://aiera.com.cn/aiera/"
     ],
-    "checked_on": "2026-09-04"
+    "checked_on": "2026-09-06",
+    "style_profile": "styles/aiera.md",
+    "style_status": "sample_calibrated",
+    "other_public_channels": [
+      {
+        "url": "https://qzqs9kyge0.feishu.cn/share/base/form/shrcnboIJzYVAeO11P9p9vUf3sh",
+        "source": "https://aiera.com.cn/aiera/",
+        "status": "official_link_form_contents_unread"
+      }
+    ]
   },
   {
     "id": "cver",
@@ -49,11 +69,14 @@
     "emails": [],
     "kind": "manual",
     "evidence": "unverified",
-    "note": "暂无可靠统一投稿邮箱；用户提供的微信 CVer222 须自行核实，可走公众号后台。",
+    "note": "2026 署名同步内容可作写作参考，未确认统一投稿邮箱；公众号后台手动联系。CVer222 现用状态未核实，会议投稿交流群助手不能当作公众号接稿渠道。",
     "sources": [
-      "https://2048ai.net/682fd74f606a8318e859eb75.html"
+      "https://cloud.tencent.com/developer/article/2697360",
+      "https://cloud.tencent.com/developer/article/2697358"
     ],
-    "checked_on": "2026-09-04"
+    "checked_on": "2026-09-06",
+    "style_profile": "styles/cver.md",
+    "style_status": "limited_reference"
   },
   {
     "id": "cvmart",
@@ -63,11 +86,23 @@
     ],
     "kind": "inquiry",
     "evidence": "official",
-    "note": "官方联系我们邮箱；先咨询投稿途径，微信 cvmart3。",
+    "note": "官网索引列联系我们邮箱 developer@cvmart.net、微信 cvmart3；用于一般联系。2020 原创作者计划的投稿微信仅作历史线索，不认定现用。",
     "sources": [
-      "https://www.cvmart.net/community/detail/2872"
+      "https://www.cvmart.net/community/detail/2872",
+      "https://www.cvmart.net/community/detail/1600"
     ],
-    "checked_on": "2026-09-04"
+    "checked_on": "2026-09-06",
+    "style_profile": "styles/cvmart.md",
+    "style_status": "limited_reference",
+    "other_public_channels": [
+      {
+        "wechat": "fengcall19",
+        "purpose": "submission",
+        "source": "https://www.cvmart.net/community/detail/1600",
+        "published_on": "2020-03-11",
+        "status": "historical_current_use_unverified"
+      }
+    ]
   },
   {
     "id": "52cv",
@@ -77,12 +112,14 @@
     ],
     "kind": "submission",
     "evidence": "secondary",
-    "note": "历史署名内容/转载有该投稿邮箱；正式投递前核实或由用户确认。",
+    "note": "2025 署名 CV君/我爱计算机视觉转载文末明确投稿邮箱，历史文章亦有同址；证据仍为第三方，正式投递前需官方复核或用户确认。",
     "sources": [
-      "https://modelers.csdn.net/69a7ef187bbde9200b9df5cd.html",
-      "https://www.52cv.net/"
+      "https://www.toolsai.cn/articles/68b23163f3a13987f8c215e4",
+      "https://modelers.csdn.net/69aa2e797bbde9200ba019aa.html"
     ],
-    "checked_on": "2026-09-04"
+    "checked_on": "2026-09-06",
+    "style_profile": "styles/52cv.md",
+    "style_status": "limited_reference"
   },
   {
     "id": "paperweekly",
@@ -92,11 +129,13 @@
     ],
     "kind": "submission",
     "evidence": "secondary",
-    "note": "2026 署名内容文末有该邮箱；第三方托管，正式投递前核实或由用户确认；微信 pwbot02。",
+    "note": "2026 署名内容文末索引列投稿邮箱、微信 pwbot02 及 Markdown/配图建议；直接抓取失败，证据仍为第三方。正式投递前需官方复核或用户确认。",
     "sources": [
       "https://deepseek.csdn.net/6a28de5610ee7a33f27a0f7e.html"
     ],
-    "checked_on": "2026-09-04"
+    "checked_on": "2026-09-06",
+    "style_profile": "styles/paperweekly.md",
+    "style_status": "limited_reference"
   },
   {
     "id": "valse",
@@ -106,10 +145,12 @@
     ],
     "kind": "inquiry",
     "evidence": "official",
-    "note": "VALSE 2026 官网联系邮箱，并未明确接收公众号稿件。",
+    "note": "VALSE 2026 官方页面搜索索引列一般联系邮箱，直接页面为动态壳；未确认公众号接稿用途。2025 论文速览主要为作者视频，当前栏目资格需另核实。",
     "sources": [
       "https://valser.org/2026/"
     ],
-    "checked_on": "2026-09-04"
+    "checked_on": "2026-09-06",
+    "style_profile": "styles/valse.md",
+    "style_status": "limited_reference"
   }
 ]
