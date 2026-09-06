@@ -46,6 +46,8 @@ QQ 邮箱配置：`smtp.qq.com`、465、`ssl`、完整邮箱作为用户名、SM
 
 prepare 会拒绝覆盖已有包。正文和附件内容嵌入 `draft.eml`；原文后续编辑不会改变这个快照，应重新 prepare 到新目录。`review.json` 记录 SHA-256、收件人、主题、附件和 Message-ID。人工审核应针对该快照内的 Word 稿；用户明确确认后才用 record-approval 保存 human-approval.json。批准与邮件哈希绑定，改稿、改收件人、重新 prepare 后需要重新审核确认。不要把凭据放入正文，不伪造核验、用户确认或绕过 blocker。最初要求投稿不等于人工审核后的确认。
 
+审核链接指向 `PACKAGE/attachments/稿件.docx`。程序在批准和发送前对照 MIME 快照、附件清单、实际审核附件与 `body.txt`；修改或移除包内 Word、正文、附件后会拒绝继续，必须从人工修改后的文件重建新包。其他目录的源文件不受快照校验监控，因此用户指定的外部修改稿也必须重新读取和打包。`.docx` 附件会检查基本 ZIP/XML 结构；这不替代 Word 排版、批注与科研内容的人工审核。
+
 ## 结果与重试
 
 - `smtp-check`: 只连接、TLS、认证、退出，`mail_sent: false`。不发送测试邮件。

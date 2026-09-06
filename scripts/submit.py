@@ -21,6 +21,9 @@ import ssl
 import sys
 import urllib.parse
 import urllib.request
+import io
+import zipfile
+import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_DIR = Path.home() / '.config' / 'paper-wechat-submit'
@@ -51,6 +54,21 @@ def read_json(path):
 
 def digest(data):
     return hashlib.sha256(data).hexdigest()
+
+def validate_docx(data):
+    """Reject renamed/non-Word files without needing the document runtime."""
+    try:
+        with zipfile.ZipFile(io.BytesIO(data)) as z:
+            for name in ('[Content_Types].xml', '_rels/.rels', 'word/document.xml'):
+                if z.getinfo(name).file_size > MAX_BYTES:
+                    fail('Word XML is too large.')
+                root = ET.fromstring(z.read(name))
+                if name == 'word/document.xml':
+                    ns = '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}'
+                    if root.tag != ns + 'document' or root.find(ns + 'body') is None:
+                        fail('Word attachment has no document body.')
+    except (zipfile.BadZipFile, KeyError, ET.ParseError, RuntimeError):
+        fail('Invalid Word attachment; export a real .docx manuscript before preparing mail.')
 
 def address(value):
     if not isinstance(value, str) or not re.fullmatch(r'[A-Za-z0-9.!#$%&\'*+/=?^_`{|}~-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}', value):
@@ -305,6 +323,8 @@ def prepare(args):
     for item in j.get('attachments', []):
         p = resolve_input(job_path.parent, item)
         data = public_file(p)
+        if p.suffix.lower() == '.docx':
+            validate_docx(data)
         if p.name in [x[0] for x in attachments]:
             fail('Attachment filenames must be unique.')
         size += len(data)
@@ -352,6 +372,30 @@ def check_package(path):
     if str(msg['To']) != r['to'] or email.utils.parseaddr(msg['From'])[1] != r['sender'] or str(msg['Subject']) != r['subject']:
         fail('Mail headers do not match review.')
     address(r['to'])
+    # People review/edit these extracted files. Never send stale MIME contents
+    # when the visible Word or email body has changed since preparation.
+    actual = []
+    for part in msg.iter_attachments():
+        name = part.get_filename()
+        if not name or Path(name).name != name or '\\' in name:
+            fail('Invalid attachment name in mail snapshot.')
+        data = part.get_payload(decode=True)
+        actual.append(dict(name=name, bytes=len(data), sha256=digest(data)))
+        local = p / 'attachments' / name
+        if not local.is_file() or local.is_symlink() or local.read_bytes() != data:
+            fail('Reviewed attachment changed or is missing; prepare a new package from the final Word and review it again.')
+    if actual != r['attachments']:
+        fail('Attachment manifest does not match mail snapshot.')
+    expected_names = {a['name'] for a in actual}
+    if {f.name for f in (p / 'attachments').iterdir()} != expected_names:
+        fail('Attachment list changed; prepare a new package for review.')
+    body = msg.get_body(preferencelist=('plain',))
+    if body is None or not (p / 'body.txt').is_file():
+        fail('Reviewed email body is missing.')
+    # set_content adds a final newline; normalize only that transport detail.
+    normalize = lambda text: text.replace('\r\n', '\n').rstrip('\n')
+    if normalize(body.get_content()) != normalize((p / 'body.txt').read_text(encoding='utf-8')):
+        fail('Reviewed email body changed; prepare a new package and review it again.')
     return p, r, raw
 
 def record_approval(args):

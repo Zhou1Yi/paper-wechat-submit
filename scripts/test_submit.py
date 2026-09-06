@@ -9,6 +9,7 @@ from unittest.mock import patch
 from email.parser import BytesParser
 from email import policy
 import smtplib
+import zipfile
 
 spec=importlib.util.spec_from_file_location('submit', Path(__file__).with_name('submit.py'))
 s=importlib.util.module_from_spec(spec); spec.loader.exec_module(s)
@@ -31,7 +32,10 @@ class Tests(unittest.TestCase):
         s.dump(self.config,dict(host='smtp.example.org',port=465,security='ssl',username='author@example.org',from_email='author@example.org',from_name='作者',password_file=str(self.root/'config/smtp.secret')))
         (self.root/'body.txt').write_text('编辑您好：这是中文稿件。',encoding='utf8')
         (self.root/'article.md').write_text('# 中文标题\n\n证据与方法。',encoding='utf8')
-        (self.root/'review.docx').write_bytes(b'Offline MIME attachment fixture, not a real manuscript')
+        with zipfile.ZipFile(self.root/'review.docx', 'w') as z:
+            z.writestr('[Content_Types].xml', '<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"/>')
+            z.writestr('_rels/.rels', '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"/>')
+            z.writestr('word/document.xml', '<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:body><w:p><w:r><w:t>Offline review fixture</w:t></w:r></w:p></w:body></w:document>')
         self.job=dict(outlet='jiqizhixin',to='editor@example.org',mode='submission',recipient_basis='user_confirmed',recipient_evidence='User selected this test-only address',subject='【投稿】中文研究',body_file='body.txt',attachments=['article.md','review.docx'],blockers=[])
     def tearDown(self): self.patch.stop(); self.temp.cleanup()
     def package(self,name='package'):
@@ -57,6 +61,44 @@ class Tests(unittest.TestCase):
         p=self.package(); (p/'human-approval.json').unlink()
         with patch.object(s,'connect') as client:
             with self.assertRaises(ValueError): s.send(self.args(p))
+            client.assert_not_called()
+    def test_edited_review_word_blocks_approval_and_send(self):
+        p=self.package()
+        (p/'attachments/review.docx').write_bytes(b'human edited this file')
+        with patch.object(s,'connect') as client:
+            with self.assertRaisesRegex(ValueError, 'attachment changed'):
+                s.record_approval(SimpleNamespace(package=str(p),statement='test confirmation'))
+            with self.assertRaisesRegex(ValueError, 'attachment changed'):
+                s.send(self.args(p))
+            client.assert_not_called()
+    def test_changed_review_body_and_manifest_are_rejected(self):
+        p=self.package()
+        original=(p/'body.txt').read_bytes()
+        (p/'body.txt').write_text('Changed recipient-facing email')
+        with self.assertRaisesRegex(ValueError, 'email body changed'): s.check_package(p)
+        (p/'body.txt').write_bytes(original)
+        review=s.read_json(p/'review.json'); review['attachments']=[]
+        s.dump(p/'review.json', review)
+        with self.assertRaisesRegex(ValueError, 'manifest'): s.check_package(p)
+    def test_missing_or_fake_word_blocks_submission(self):
+        (self.root/'review.docx').write_bytes(b'not a Word file')
+        with self.assertRaisesRegex(ValueError, 'Invalid Word'): self.package()
+        self.job['attachments']=['article.md']
+        s.dump(self.root/'job.json',self.job)
+        p=self.root/'missing-word'
+        s.prepare(SimpleNamespace(job=str(self.root/'job.json'),out=str(p),config=str(self.config)))
+        with patch.object(s,'connect') as client:
+            with self.assertRaises(ValueError):
+                s.record_approval(SimpleNamespace(package=str(p),statement='test confirmation'))
+            with self.assertRaises(ValueError): s.send(self.args(p))
+            client.assert_not_called()
+    def test_old_approval_cannot_authorize_new_word(self):
+        p=self.package()
+        with zipfile.ZipFile(self.root/'review.docx', 'a') as z: z.writestr('docProps/new-version.xml','<version>2</version>')
+        q=self.package('new-word')
+        (q/'human-approval.json').write_bytes((p/'human-approval.json').read_bytes())
+        with patch.object(s,'connect') as client:
+            with self.assertRaisesRegex(ValueError, 'does not match'): s.send(self.args(q))
             client.assert_not_called()
     def test_blockers_and_secret_attachment(self):
         self.job['blockers']=['Missing selected outlet']; p=self.package()
