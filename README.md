@@ -2,7 +2,7 @@
 
 把论文链接转成适配目标公众号的中文 **Word 推文**，经过人工审核与明确确认后，再通过本地 SMTP 投稿。
 
-这是一个 Codex Skill，支持机器之心、量子位、新智元、CVer、极市平台、我爱计算机视觉、PaperWeekly 和 VALSE。它用于论文宣传与公众号投稿，不是学术期刊投稿系统。
+这是一个 Codex Skill，支持机器之心、量子位、新智元、CVer、极市平台、我爱计算机视觉、PaperWeekly、VALSE 和图灵派对。它用于论文宣传与公众号投稿，不是学术期刊投稿系统。
 
 > **默认停在 Word 人工审核阶段。** 配置邮箱、验证登录或最初提出投稿需求，都不等于审核后的发送确认。没有当前邮件版本的人工确认记录，发送程序会拒绝投递。
 
@@ -120,7 +120,7 @@ python -m pip install -r requirements-docx.txt
 
 | 平台 | 内置渠道 | 用途与证据 |
 | --- | --- | --- |
-| 机器之心 | liyazhou@jiqizhixin.com / zhaoyunfeng@jiqizhixin.com | 官方历史 AIxiv 文章明确列出投稿邮箱；每封邮件仅选一个收件人 |
+| 机器之心 | z@jqzx.ai | AIxiv 栏目图示公布的投稿邮箱；每封邮件仅选一个收件人 |
 | 量子位 | ai@qbitai.com | 官方投稿与爆料邮箱；主题应标注投稿或爆料 |
 | 新智元 | daijia@aiera.com.cn / xiaoyunhong@aiera.com.cn | 官方合作邮箱，默认仅咨询 |
 | CVer | 公众号后台等手动渠道 | 尚无可靠统一投稿邮箱 |
@@ -128,6 +128,7 @@ python -m pip install -r requirements-docx.txt
 | 我爱计算机视觉 | amos@52cv.net | 历史署名内容与转载提供，正式投递前进一步核实或由用户确认 |
 | PaperWeekly | hr@paperweekly.site | 第三方托管的署名文章提供，正式投递前进一步核实或由用户确认 |
 | VALSE | valse_official@163.com | 会议官网联系邮箱，默认仅咨询 |
+| 图灵派对 | xuechaozou@foxmail.com | 用户提供的投稿邮箱；正式投递前可按当期要求核实 |
 
 完整来源、证据等级和说明见 [outlets.json](references/outlets.json)。咨询邮件也遵循人工审核与明确确认流程。选择多个平台时分别写稿、分别发信，不群发或互相抄送。
 

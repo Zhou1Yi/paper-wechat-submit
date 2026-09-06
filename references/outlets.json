@@ -3,16 +3,15 @@
     "id": "jiqizhixin",
     "name": "机器之心",
     "emails": [
-      "liyazhou@jiqizhixin.com",
-      "zhaoyunfeng@jiqizhixin.com"
+      "z@jqzx.ai"
     ],
     "kind": "submission",
     "evidence": "official",
-    "note": "AIxiv 官方历史文章明确公布投稿邮箱；默认选择一名编辑，不同时发送两份。",
+    "note": "AIxiv 栏目图示公布投稿邮箱；默认只发送一份。",
     "sources": [
-      "https://www.jiqizhixin.com/articles/2025-02-19-3"
+      "https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=MzA3MzI4MjgzMw==&scene=1&album_id=4328536051397804037&count=3#wechat_redirect"
     ],
-    "checked_on": "2026-09-04"
+    "checked_on": "2026-09-06"
   },
   {
     "id": "qbitai",
@@ -152,5 +151,19 @@
     "checked_on": "2026-09-06",
     "style_profile": "styles/valse.md",
     "style_status": "limited_reference"
+  },
+  {
+    "id": "turing-party",
+    "name": "图灵派对",
+    "emails": [
+      "xuechaozou@foxmail.com"
+    ],
+    "kind": "submission",
+    "evidence": "user_provided",
+    "note": "用户提供的投稿邮箱；投稿前按当期要求核实收稿范围和格式。",
+    "sources": [],
+    "checked_on": "2026-09-06",
+    "style_profile": null,
+    "style_status": "suggested_format"
   }
 ]
