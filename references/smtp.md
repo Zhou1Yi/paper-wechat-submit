@@ -29,7 +29,7 @@ QQ 邮箱配置：`smtp.qq.com`、465、`ssl`、完整邮箱作为用户名、SM
 {
   "outlet": "jiqizhixin",
   "mode": "submission",
-  "to": "liyazhou@jiqizhixin.com",
+  "to": "z@jqzx.ai",
   "recipient_basis": "registry",
   "subject": "【投稿】研究名称：有证据支持的一句话贡献",
   "body_file": "email.txt",
@@ -40,6 +40,8 @@ QQ 邮箱配置：`smtp.qq.com`、465、`ssl`、完整邮箱作为用户名、SM
 
 - `mode`: `submission` 全文投稿或 `inquiry` 咨询。新智元、极市、VALSE 的默认邮箱只能用于咨询。CVer 无默认邮箱，生成手动联系材料；不要猜邮箱。
 - `recipient_basis`: `registry` 使用库中最近 30 天核验的官方地址；`official_rechecked` 用当次核实的官方地址，并写 `recipient_evidence`（具体 URL、核验日期及“投稿邮箱”证据）；`user_confirmed` 记录用户明确确认的地址及用途，也必须写 `recipient_evidence`。该字段是记录证据，不自行证明用户授权发送。
+
+图灵派对的 `outlet` 为 `turing-party`，用户已在本次需求中指定投稿邮箱 `xuechaozou@foxmail.com`。同一任务沿用这一明确指定时，使用 `recipient_basis: "user_confirmed"`，并在 `recipient_evidence` 写明用户指定的地址与用途，不必重复询问地址。共享技能的其他使用者不能把本仓库作者的历史指定当成自己的确认；可自行核实或指定地址。无论哪种依据，仍须真实完成最终 Word 人工审核与当前邮件的发送确认。
 - `blockers`: 未选目标、未确认署名、事实冲突、需要首发状态等实际未解决事项；有 blocker 可生成邮件预览但不能发送。仅删除确已解决的项，再重新 prepare。全文投稿缺少 Word 附件也会自动加入 blocker。
 - `attachments`: 显式文件清单，不能用整个工作目录。总原始附件/正文上限 15 MiB。相同 basename 被拒绝。配图请逐个附件列出；大量图片可主动制作仅含公开图片的 ZIP。
 - `from_email/from_name` 从配置读取，不在 job 覆盖。没有 SMTP 配置时使用不可投递的预览发件人并加入 blocker。

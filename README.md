@@ -47,6 +47,7 @@
 | [我爱计算机视觉](references/styles/52cv.md) | 直觉和方法图解串起结果与点评；2025/2026 署名转载，依据有限。 |
 | [PaperWeekly](references/styles/paperweekly.md) | 动机、设计、评测和局限的完整研究逻辑；两篇 2026 署名转载全文。 |
 | [VALSE](references/styles/valse.md) | 论文速览侧重作者讲解视频与摘要；依据为 2025 官方旧文，先做 Word 分享提案。 |
+| 图灵派对 | 已加入平台与邮箱；尚未校准样文，先按建议的论文解读结构生成审核稿。 |
 
 同期[渠道与校准记录](references/calibration-2026-09-06.md) 单独区分投稿邮箱、合作联系和手动入口。第三方转载不冒充官方原版，相同文章跨平台转载不重复计为独立风格样本。字数、结构建议不冒充强制规则；用户提供当期同栏目样文时优先对齐。
 
@@ -116,11 +117,11 @@ python -m pip install -r requirements-docx.txt
 
 ## 支持的平台与渠道
 
-下列为仓库中 2026-09-04 的核验记录；实际投稿前应重新核实。邮箱和规则可能变更。
+下列为截至 2026-09-06 的公开资料核对及用户提供记录；具体来源以各条目为准，邮箱和规则可能变更。
 
 | 平台 | 内置渠道 | 用途与证据 |
 | --- | --- | --- |
-| 机器之心 | z@jqzx.ai | AIxiv 栏目图示公布的投稿邮箱；每封邮件仅选一个收件人 |
+| 机器之心 | z@jqzx.ai | 用户提供的 AIxiv 栏目截图明确列出的投稿邮箱，已替换旧地址；[栏目入口](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=MzA3MzI4MjgzMw==&scene=1&album_id=4328536051397804037&count=3#wechat_redirect) |
 | 量子位 | ai@qbitai.com | 官方投稿与爆料邮箱；主题应标注投稿或爆料 |
 | 新智元 | daijia@aiera.com.cn / xiaoyunhong@aiera.com.cn | 官方合作邮箱，默认仅咨询 |
 | CVer | 公众号后台等手动渠道 | 尚无可靠统一投稿邮箱 |
@@ -128,9 +129,11 @@ python -m pip install -r requirements-docx.txt
 | 我爱计算机视觉 | amos@52cv.net | 历史署名内容与转载提供，正式投递前进一步核实或由用户确认 |
 | PaperWeekly | hr@paperweekly.site | 第三方托管的署名文章提供，正式投递前进一步核实或由用户确认 |
 | VALSE | valse_official@163.com | 会议官网联系邮箱，默认仅咨询 |
-| 图灵派对 | xuechaozou@foxmail.com | 用户提供的投稿邮箱；正式投递前可按当期要求核实 |
+| 图灵派对 | xuechaozou@foxmail.com | 用户指定的投稿邮箱；任务中记录为 user_confirmed，仍需最终 Word 审核及发送确认 |
 
 完整来源、证据等级和说明见 [outlets.json](references/outlets.json)。咨询邮件也遵循人工审核与明确确认流程。选择多个平台时分别写稿、分别发信，不群发或互相抄送。
+
+机器之心此次地址更新依据用户给出的截图及明确指示；微信栏目链接本次未能直接读取，不将其表述为已在线核验全文。图灵派对的邮箱依据用户提供，不冒充官网核验，也不代表已经完成写作风格校准。
 
 ## 配置本地 SMTP
 
@@ -195,7 +198,7 @@ Word 导出后必须渲染并逐页检查，特别是中文字体、图片与表
 {
   "outlet": "jiqizhixin",
   "mode": "submission",
-  "to": "liyazhou@jiqizhixin.com",
+  "to": "z@jqzx.ai",
   "recipient_basis": "registry",
   "subject": "【AIxiv 投稿】论文名称与具体贡献",
   "body_file": "email.txt",

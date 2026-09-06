@@ -16,6 +16,8 @@
 | PaperWeekly | [paperweekly.md](styles/paperweekly.md) | 两篇 2026 署名转载全文，微信原版未核验 |
 | VALSE | [valse.md](styles/valse.md) | 两篇 2025 官方论文速览；当期接稿要求未核验 |
 
+图灵派对已加入支持的平台，但尚无已读样文档案，状态为 `suggested_format`。选择它时优先读取用户提供的样文；没有可读全文也先完成 Word，采用“问题与亮点 → 论文资源 → 方法图解 → 实验 → 局限与资源”的建议结构，并在独立作者备注说明依据不足，不声称是图灵派对官方模板。
+
 ## 每次任务的样文校准
 
 优先读取用户提供的同栏目参考文；否则寻找所选公众号同栏目、相近主题的一至三篇可读全文。新闻快讯和作者技术解读应分别对待。近期样文优先，只有历史样文时标明日期。搜索摘要、登录页和仅有标题的结果不能当作已经阅读全文。
@@ -50,7 +52,7 @@
 
 ## 有来源的规则
 
-- 机器之心：[AIxiv 历史官方文章](https://www.jiqizhixin.com/articles/2025-02-19-3) 公开投稿邮箱；可参考背景、方法、贡献、实验、作者介绍的结构。不照抄套话或媒体署名。
+- 机器之心：按用户提供的 AIxiv 截图及明确指示，投稿邮箱更新为 `z@jqzx.ai`；用户附的[栏目入口](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=MzA3MzI4MjgzMw==&scene=1&album_id=4328536051397804037&count=3#wechat_redirect) 本次未能直接读取。2025 历史文章不再作为当前邮箱依据；写作结构仍参考背景、方法、贡献、实验、作者介绍，不照抄媒体署名。
 - 量子位：[关于我们](https://www.qbitai.com/关于我们) 要求主题标注“投稿”或“爆料”，列 `ai@qbitai.com`；[寻求报道](https://www.qbitai.com/寻求报道) 同用途另列 `qbitai@qq.com`，未确认替换关系。[2023 投稿须知转载](https://www.10100.com/article/3026841) 中 2000 字内 Word 建议是历史二手信息，不硬套为现行字数上限。
 - PaperWeekly：[2026 署名 PaperWeekly 的文末说明](https://deepseek.csdn.net/6a28de5610ee7a33f27a0f7e.html) 建议 Markdown、配图单独附件、即时联系方式、说明已发表或待发表情况。来源托管在第三方，不称当前官网规则，不沿用早期稿费承诺。
 - 极市：[2020 官方作者计划](https://www.cvmart.net/community/detail/1600) 包括专业论文解读，不能推断必须附复现教程；联系微信是历史记录。
