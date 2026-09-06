@@ -8,7 +8,7 @@
 **项目主页：** https://xavierjiezou.github.io/ARGUS/  
 **作者：** Xuechao Zou、Shun Zhang、Kai Li、Yi Zhou、Xinyu Sun、Yuhui Chen、Zhe Wu、Congyan Lang、Junliang Xing
 
-![论文作者与机构信息](figures/argus-authors.png)
+![论文作者与机构](figures/authors-institutions.png)
 
 ![ARGUS 与单一多模态模型的框架对比](figures/paper_fig1.png)
 
@@ -51,13 +51,15 @@ ARGUS 的训练流程包含监督微调（SFT）和群体相对策略优化（GR
 
 作者在域外（OOD）测试集上评估 ARGUS，测试集包含 7,636 段来自 20 个训练阶段未使用生成器的视频。项目页报告显示，ARGUS 在所报告的全部指标上排名第一，并超过了包括闭源 GPT 与 Gemini 在内的对比方法。这里的结论适用于论文所定义的数据划分、模型配置和指标；它不等同于对所有现实场景或所有新生成器的普遍保证。
 
-![主实验结果](figures/argus-table-7.png)
+![主实验结果](figures/main-results-table.png)
 
 主实验表同时报告 Accuracy、Recall 和 F1。相比只在一个指标上比较，三项指标一起看更能体现模型在不同错误类型之间的取舍。
 
-![域外评测与消融结果](figures/argus-table-12.png)
+![训练阶段消融结果](figures/ablation-table.png)
 
-消融结果显示，观察者分工与裁判聚合是整体性能的重要组成部分；去掉独立观察或改变聚合方式，都会影响最终判断。
+消融结果显示，SFT 与 GRPO 训练阶段会带来逐步提升；保留观察者与裁判的分工，有助于最终判断。
+
+![推理策略消融结果](figures/reasoning-ablation-table.png)
 
 更值得关注的是模型规模与系统设计之间的关系：ARGUS 完全由小型开源多模态语言模型组成，却通过独立观察和裁判聚合获得了更稳定的证据覆盖。结果提示，提升视频鉴伪能力不只依赖更大的单模型，也可以从分析视角的组织方式入手。
 
