@@ -47,7 +47,7 @@
 | [我爱计算机视觉](references/styles/52cv.md) | 用直觉和方法图解串起研究设计、实验结果与技术点评。 |
 | [PaperWeekly](references/styles/paperweekly.md) | 完整展开动机、设计、训练目标、评测协议、消融与局限，强调论证过程。 |
 | [VALSE](references/styles/valse.md) | 默认准备研究分享提案、讲解提纲及论文资源；按栏目要求补充作者视频和摘要。 |
-| [图灵派对](references/styles/turing-party.md) | 采用问题引入、方法图解、实验证据与讨论的研究解读结构；提供[参考文章入口](https://mp.weixin.qq.com/s/kx3WiogHaDWHVBH86KZMoQ)。 |
+| [图灵派对](references/styles/turing-party.md) | 采用问题引入、方法图解、实验证据与讨论的研究解读结构。 |
 
 各平台指南提供结构、图文安排和来源说明。共同排版建议包括：论文信息旁放作者与机构截图；对比图在问题说明后出现；流程图跟随模块介绍；实验截图后紧接结果分析。标题、格式和篇幅可按作者要求调整。
 
