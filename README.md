@@ -129,7 +129,7 @@ python -m pip install -r requirements-docx.txt
 | 我爱计算机视觉 | amos@52cv.net | 投稿联系；投递前确认邮箱仍接收稿件。 |
 | PaperWeekly | hr@paperweekly.site | 投稿联系；确认当前接稿要求及配图、辅助文件格式。 |
 | VALSE | valse_official@163.com | 官方联系邮箱；先咨询研究分享的接收范围与材料形式。 |
-| [图灵派对](https://mp.weixin.qq.com/s/kx3WiogHaDWHVBH86KZMoQ) | xuechaozou@foxmail.com | 投稿联系；使用前确认接收范围与稿件要求。 |
+| 图灵派对| xuechaozou@foxmail.com | 投稿联系；使用前确认接收范围与稿件要求。 |
 
 合作和一般联系邮箱默认用于咨询，确认接稿方式后再准备全文投递。部分投稿地址尚需官方复核或投稿者确认，来源和核对日期见[渠道资料](references/outlets.json)。咨询邮件同样需要人工确认；多平台投稿分别准备、分别发送。
 
