@@ -117,21 +117,21 @@ python -m pip install -r requirements-docx.txt
 
 ## 支持的平台与渠道
 
-选择平台即可使用以下联系渠道。邮箱和接稿要求可能变化，正式投递前需确认地址与稿件类型匹配。
+以下渠道按公开来源区分用途（核查日期：2026-09-07）。公开列出地址不等于已验证可送达或当前仍接稿。
 
-| 平台 | 联系渠道 | 投稿说明 |
+| 平台 | 联系渠道 | 核查结果与使用建议 |
 | --- | --- | --- |
-| 机器之心 | z@jqzx.ai | AIxiv 学术与技术内容投稿；[栏目入口](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=MzA3MzI4MjgzMw==&scene=1&album_id=4328536051397804037&count=3#wechat_redirect)。 |
-| 量子位 | ai@qbitai.com | 投稿与爆料；邮件主题注明“投稿”或“爆料”。 |
-| 新智元 | daijia@aiera.com.cn / xiaoyunhong@aiera.com.cn | 合作联系邮箱；先咨询报道需求与接稿方式。 |
-| CVer | 公众号后台 | 通过后台联系编辑，确认投稿入口。 |
-| 极市平台 | developer@cvmart.net | 官方联系邮箱；先咨询技术内容投稿的对接方式。 |
-| 我爱计算机视觉 | amos@52cv.net | 投稿联系；投递前确认邮箱仍接收稿件。 |
-| PaperWeekly | hr@paperweekly.site | 投稿联系；确认当前接稿要求及配图、辅助文件格式。 |
-| VALSE | valse_official@163.com | 官方联系邮箱；先咨询研究分享的接收范围与材料形式。 |
-| 图灵派对| xuechaozou@foxmail.com | 投稿联系；使用前确认接收范围与稿件要求。 |
+| 机器之心 | z@jqzx.ai | 官网索引可核对地址归属，AIxiv 栏目截图支持研究投稿用途；[官网入口](https://www.jiqizhixin.com/events)、[AIxiv 栏目](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=MzA3MzI4MjgzMw==&scene=1&album_id=4328536051397804037&count=3#wechat_redirect)。 |
+| 量子位 | ai@qbitai.com | **官方明确投稿邮箱**；主题注明“投稿”或“爆料”。[官方联系页](https://www.qbitai.com/联系我们) |
+| 新智元 | daijia@aiera.com.cn / xiaoyunhong@aiera.com.cn | **官方合作邮箱**；先咨询接稿方式。[官方说明](https://aiera.com.cn/aiera/) |
+| CVer | 微信搜索 CVer / CVerNews，尝试后台咨询 | **投稿入口待确认**；尚无已核实的统一邮箱，后台是否接稿也未确认。[账号参考](https://openi.cn/sites/151148.html) |
+| 极市平台 | developer@cvmart.net | **官方一般联系邮箱**，依据官网搜索索引；不等于稿件直投邮箱。[官网联系信息](https://www.cvmart.net/community/detail/2872) |
+| 我爱计算机视觉 | amos@52cv.net | **历史投稿邮箱，当前状态待确认**；可追溯至署名转载的投稿说明。[历史来源](https://www.yisu.com/jc/591097.html) |
+| PaperWeekly | hr@paperweekly.site | **历史投稿邮箱，当前状态待确认**；多篇投稿说明列出同址。[投稿须知](https://www.sohu.com/a/227267042_500659)、[后续署名内容](https://www.sohu.com/a/808033098_121119001) |
+| VALSE | valse_official@163.com | **官方一般联系邮箱**，依据会议官网搜索索引；论文分享接收范围需另行咨询。[官方页面](https://valser.org/2026/) |
+| [图灵派对](https://mp.weixin.qq.com/s/kx3WiogHaDWHVBH86KZMoQ) | xuechaozou@foxmail.com（候选） | **公众号接稿用途待确认**；个人主页公开列此地址，尚缺其与图灵派对的公开关联。[个人主页](https://github.com/XavierJiezou) |
 
-合作和一般联系邮箱默认用于咨询，确认接稿方式后再准备全文投递。部分投稿地址尚需官方复核或投稿者确认，来源和核对日期见[渠道资料](references/outlets.json)。咨询邮件同样需要人工确认；多平台投稿分别准备、分别发送。
+合作和一般联系邮箱默认用于咨询。历史地址及候选地址需要官方复核或投稿者明确确认后使用。详细依据与访问限制见[渠道核查说明](references/contact-audit-2026-09-07.md)和[渠道资料](references/outlets.json)。所有邮件仍经人工确认，多平台分别发送。
 
 ## 配置本地 SMTP
 

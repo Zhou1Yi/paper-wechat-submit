@@ -7,14 +7,17 @@
     ],
     "kind": "submission",
     "evidence": "official",
-    "note": "AIxiv 栏目截图列出的学术与技术内容投稿邮箱；依据为官方栏目标识截图，微信栏目正文未在线核验。",
+    "note": "官网搜索索引列 z@jqzx.ai 为寻求合作邮箱；AIxiv 栏目截图明确邀请分享研究工作。地址归属有交叉支持，投稿用途依据截图；微信栏目正文未在线核验。",
     "sources": [
-      "https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=MzA3MzI4MjgzMw==&scene=1&album_id=4328536051397804037&count=3#wechat_redirect"
+      "https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=MzA3MzI4MjgzMw==&scene=1&album_id=4328536051397804037&count=3#wechat_redirect",
+      "https://www.jiqizhixin.com/events"
     ],
     "checked_on": "2026-09-06",
     "verification_method": "user_supplied_official_screenshot_and_explicit_address_instruction",
     "style_profile": "styles/jiqizhixin.md",
-    "style_status": "limited_reference"
+    "style_status": "limited_reference",
+    "last_reviewed_on": "2026-09-07",
+    "contact_review_status": "official_address_screenshot_submission"
   },
   {
     "id": "qbitai",
@@ -24,12 +27,13 @@
     ],
     "kind": "submission",
     "evidence": "official",
-    "note": "官方关于我们页明确投稿/爆料邮箱 ai@qbitai.com，主题注明投稿或爆料；寻求报道页另列 qbitai@qq.com，未确认替换关系，不自动双投。",
+    "note": "官网联系我们页明确列 ai@qbitai.com 为投稿与爆料邮箱，要求主题注明投稿或爆料。",
     "sources": [
       "https://www.qbitai.com/关于我们",
-      "https://www.qbitai.com/寻求报道"
+      "https://www.qbitai.com/寻求报道",
+      "https://www.qbitai.com/联系我们"
     ],
-    "checked_on": "2026-09-06",
+    "checked_on": "2026-09-07",
     "style_profile": "styles/qbitai.md",
     "style_status": "sample_calibrated",
     "other_public_channels": [
@@ -39,7 +43,9 @@
         "source": "https://www.qbitai.com/寻求报道",
         "status": "official_alternative_not_default"
       }
-    ]
+    ],
+    "last_reviewed_on": "2026-09-07",
+    "contact_review_status": "official_submission"
   },
   {
     "id": "aiera",
@@ -50,11 +56,11 @@
     ],
     "kind": "inquiry",
     "evidence": "official",
-    "note": "官方明确为合作邮箱，未确认普通稿件直投用途；官网寻求报道指向飞书表单，已核对链接但表单内容未核验。",
+    "note": "官网关于我们页明确将两个地址列为合作邮箱；未确认普通论文稿件直投用途。",
     "sources": [
       "https://aiera.com.cn/aiera/"
     ],
-    "checked_on": "2026-09-06",
+    "checked_on": "2026-09-07",
     "style_profile": "styles/aiera.md",
     "style_status": "sample_calibrated",
     "other_public_channels": [
@@ -63,7 +69,9 @@
         "source": "https://aiera.com.cn/aiera/",
         "status": "official_link_form_contents_unread"
       }
-    ]
+    ],
+    "last_reviewed_on": "2026-09-07",
+    "contact_review_status": "official_inquiry"
   },
   {
     "id": "cver",
@@ -71,14 +79,17 @@
     "emails": [],
     "kind": "manual",
     "evidence": "unverified",
-    "note": "2026 署名同步内容可作写作参考，未确认统一投稿邮箱；公众号后台手动联系。CVer222 现用状态未核实，会议投稿交流群助手不能当作公众号接稿渠道。",
+    "note": "未确认统一投稿邮箱，也未实际验证公众号后台能否接收稿件。CVer/CVerNews 仅作为查找公众号及咨询的手动入口；旧助手微信或技术群不等于接稿渠道。",
     "sources": [
       "https://cloud.tencent.com/developer/article/2697360",
-      "https://cloud.tencent.com/developer/article/2697358"
+      "https://cloud.tencent.com/developer/article/2697358",
+      "https://blog.csdn.net/amusi1994/article/details/136104827"
     ],
     "checked_on": "2026-09-06",
     "style_profile": "styles/cver.md",
-    "style_status": "limited_reference"
+    "style_status": "limited_reference",
+    "last_reviewed_on": "2026-09-07",
+    "contact_review_status": "manual_route_unverified"
   },
   {
     "id": "cvmart",
@@ -88,7 +99,7 @@
     ],
     "kind": "inquiry",
     "evidence": "official",
-    "note": "官网索引列联系我们邮箱 developer@cvmart.net、微信 cvmart3；用于一般联系。2020 原创作者计划的投稿微信仅作历史线索，不认定现用。",
+    "note": "官方域名搜索索引列 developer@cvmart.net 为联系我们邮箱；直接页面为 JavaScript 壳。可确认一般联系依据，未确认公众号直投用途。",
     "sources": [
       "https://www.cvmart.net/community/detail/2872",
       "https://www.cvmart.net/community/detail/1600"
@@ -104,7 +115,9 @@
         "published_on": "2020-03-11",
         "status": "historical_current_use_unverified"
       }
-    ]
+    ],
+    "last_reviewed_on": "2026-09-07",
+    "contact_review_status": "official_index_inquiry"
   },
   {
     "id": "52cv",
@@ -114,14 +127,17 @@
     ],
     "kind": "submission",
     "evidence": "secondary",
-    "note": "2025 署名 CV君/我爱计算机视觉转载文末明确投稿邮箱，历史文章亦有同址；证据仍为第三方，正式投递前需官方复核或用户确认。",
+    "note": "历史署名转载文末明确列投稿邮箱 amos@52cv.net；官网直接访问失败。地址有历史投稿依据，但当前接稿状态尚未确认。",
     "sources": [
       "https://www.toolsai.cn/articles/68b23163f3a13987f8c215e4",
-      "https://modelers.csdn.net/69aa2e797bbde9200ba019aa.html"
+      "https://modelers.csdn.net/69aa2e797bbde9200ba019aa.html",
+      "https://www.yisu.com/jc/591097.html"
     ],
     "checked_on": "2026-09-06",
     "style_profile": "styles/52cv.md",
-    "style_status": "limited_reference"
+    "style_status": "limited_reference",
+    "last_reviewed_on": "2026-09-07",
+    "contact_review_status": "historical_secondary_submission"
   },
   {
     "id": "paperweekly",
@@ -131,13 +147,17 @@
     ],
     "kind": "submission",
     "evidence": "secondary",
-    "note": "2026 署名内容文末索引列投稿邮箱、微信 pwbot02 及 Markdown/配图建议；直接抓取失败，证据仍为第三方。正式投递前需官方复核或用户确认。",
+    "note": "2018 投稿须知及2024署名转载文末均列 hr@paperweekly.site 为投稿邮箱；官网未能读取。历史依据明确，当前接稿状态尚未确认。",
     "sources": [
-      "https://deepseek.csdn.net/6a28de5610ee7a33f27a0f7e.html"
+      "https://deepseek.csdn.net/6a28de5610ee7a33f27a0f7e.html",
+      "https://www.sohu.com/a/227267042_500659",
+      "https://www.sohu.com/a/808033098_121119001"
     ],
     "checked_on": "2026-09-06",
     "style_profile": "styles/paperweekly.md",
-    "style_status": "limited_reference"
+    "style_status": "limited_reference",
+    "last_reviewed_on": "2026-09-07",
+    "contact_review_status": "historical_secondary_submission"
   },
   {
     "id": "valse",
@@ -147,13 +167,15 @@
     ],
     "kind": "inquiry",
     "evidence": "official",
-    "note": "VALSE 2026 官方页面搜索索引列一般联系邮箱，直接页面为动态壳；未确认公众号接稿用途。2025 论文速览主要为作者视频，当前栏目资格需另核实。",
+    "note": "VALSE 2026 官方页面搜索索引在联系我们栏目列此邮箱；直接页面未取得正文。一般联系用途有依据，公众号稿件接收范围仍需确认。",
     "sources": [
       "https://valser.org/2026/"
     ],
     "checked_on": "2026-09-06",
     "style_profile": "styles/valse.md",
-    "style_status": "limited_reference"
+    "style_status": "limited_reference",
+    "last_reviewed_on": "2026-09-07",
+    "contact_review_status": "official_index_inquiry"
   },
   {
     "id": "turing-party",
@@ -163,10 +185,14 @@
     ],
     "kind": "submission",
     "evidence": "user_provided",
-    "note": "维护者提供的投稿联系地址，尚无官方公开邮箱依据；使用前需取得官方复核或投稿者明确确认。样文入口见写作档案，正文未取得，暂采用建议结构。",
-    "sources": [],
+    "note": "Xuechao Zou 的个人 GitHub 页面公开列此地址；尚未找到与图灵派对接稿用途的公开关联。保留维护者提供的候选地址，不将个人联系信息视为公众号官方投稿认证。",
+    "sources": [
+      "https://github.com/XavierJiezou"
+    ],
     "checked_on": "2026-09-06",
     "style_profile": "styles/turing-party.md",
-    "style_status": "suggested_format"
+    "style_status": "suggested_format",
+    "last_reviewed_on": "2026-09-07",
+    "contact_review_status": "personal_address_outlet_link_unverified"
   }
 ]

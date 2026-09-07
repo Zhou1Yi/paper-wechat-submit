@@ -25,4 +25,4 @@
 
 ## 渠道
 
-投稿联系邮箱：`xuechaozou@foxmail.com`。地址来源及核验状态见 [outlets.json](../outlets.json)；写作参考链接不等于邮箱已获官方核验。
+候选联系邮箱：`xuechaozou@foxmail.com`。个人主页可核对地址，公众号接稿用途尚未公开确认。地址来源及核验状态见 [outlets.json](../outlets.json)；写作参考链接不等于邮箱已获官方核验。
