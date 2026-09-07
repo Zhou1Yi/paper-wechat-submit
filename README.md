@@ -60,7 +60,7 @@
 将本仓库克隆到个人技能目录：
 
 ```bash
-git clone https://github.com/Zhou1Yi/paper-wechat-submit.git \
+git clone https://github.com/Zhou1Yi/paper2wechat.git \
   "${CODEX_HOME:-$HOME/.codex}/skills/paper2wechat"
 ```
 
