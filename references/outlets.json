@@ -7,12 +7,14 @@
     ],
     "kind": "submission",
     "evidence": "official",
-    "note": "用户提供的 AIxiv 官方栏目标识截图明确列 z@jqzx.ai，并指示替换旧邮箱；附带微信栏目链接本次未能直接读取。默认只发送一份，仍须最终稿人工审核及明确发送确认。",
+    "note": "AIxiv 栏目截图列出的学术与技术内容投稿邮箱；依据为官方栏目标识截图，微信栏目正文未在线核验。",
     "sources": [
       "https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=MzA3MzI4MjgzMw==&scene=1&album_id=4328536051397804037&count=3#wechat_redirect"
     ],
     "checked_on": "2026-09-06",
-    "verification_method": "user_supplied_official_screenshot_and_explicit_address_instruction"
+    "verification_method": "user_supplied_official_screenshot_and_explicit_address_instruction",
+    "style_profile": "styles/jiqizhixin.md",
+    "style_status": "limited_reference"
   },
   {
     "id": "qbitai",
@@ -48,7 +50,7 @@
     ],
     "kind": "inquiry",
     "evidence": "official",
-    "note": "官方明确为合作邮箱，未确认普通稿件直投用途；官网寻求报道指向飞书表单，已核对链接但本次未读到表单内容。",
+    "note": "官方明确为合作邮箱，未确认普通稿件直投用途；官网寻求报道指向飞书表单，已核对链接但表单内容未核验。",
     "sources": [
       "https://aiera.com.cn/aiera/"
     ],
@@ -161,10 +163,10 @@
     ],
     "kind": "submission",
     "evidence": "user_provided",
-    "note": "用户明确指定的投稿邮箱；同一会话可用 user_confirmed 记录该地址与用途。未取得样文，写法为建议格式；地址指定不替代最终稿审核与发送确认。",
+    "note": "维护者提供的投稿联系地址，尚无官方公开邮箱依据；使用前需取得官方复核或投稿者明确确认。样文入口见写作档案，正文未取得，暂采用建议结构。",
     "sources": [],
     "checked_on": "2026-09-06",
-    "style_profile": null,
+    "style_profile": "styles/turing-party.md",
     "style_status": "suggested_format"
   }
 ]

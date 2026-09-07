@@ -33,7 +33,7 @@ QQ 邮箱配置：`smtp.qq.com`、465、`ssl`、完整邮箱作为用户名、SM
   "recipient_basis": "registry",
   "subject": "【投稿】研究名称：有证据支持的一句话贡献",
   "body_file": "email.txt",
-  "attachments": ["article.docx", "article.md", "article.html", "figures/overview.png"],
+  "attachments": ["article.docx"],
   "blockers": []
 }
 ```
@@ -41,7 +41,8 @@ QQ 邮箱配置：`smtp.qq.com`、465、`ssl`、完整邮箱作为用户名、SM
 - `mode`: `submission` 全文投稿或 `inquiry` 咨询。新智元、极市、VALSE 的默认邮箱只能用于咨询。CVer 无默认邮箱，生成手动联系材料；不要猜邮箱。
 - `recipient_basis`: `registry` 使用库中最近 30 天核验的官方地址；`official_rechecked` 用当次核实的官方地址，并写 `recipient_evidence`（具体 URL、核验日期及“投稿邮箱”证据）；`user_confirmed` 记录用户明确确认的地址及用途，也必须写 `recipient_evidence`。该字段是记录证据，不自行证明用户授权发送。
 
-图灵派对的 `outlet` 为 `turing-party`，用户已在本次需求中指定投稿邮箱 `xuechaozou@foxmail.com`。同一任务沿用这一明确指定时，使用 `recipient_basis: "user_confirmed"`，并在 `recipient_evidence` 写明用户指定的地址与用途，不必重复询问地址。共享技能的其他使用者不能把本仓库作者的历史指定当成自己的确认；可自行核实或指定地址。无论哪种依据，仍须真实完成最终 Word 人工审核与当前邮件的发送确认。
+非官方核验的地址（如图灵派对）不能直接使用 `registry` 投稿。取得当前投稿者的明确地址确认时，使用 `user_confirmed` 并写明地址及用途；或者取得官方依据后使用 `official_rechecked`。共享仓库中的历史确认不替代当前投稿者的确认。两者均不等于最终邮件的发送许可。
+
 - `blockers`: 未选目标、未确认署名、事实冲突、需要首发状态等实际未解决事项；有 blocker 可生成邮件预览但不能发送。仅删除确已解决的项，再重新 prepare。全文投稿缺少 Word 附件也会自动加入 blocker。
 - `attachments`: 显式文件清单，不能用整个工作目录。总原始附件/正文上限 15 MiB。相同 basename 被拒绝。配图请逐个附件列出；大量图片可主动制作仅含公开图片的 ZIP。
 - `from_email/from_name` 从配置读取，不在 job 覆盖。没有 SMTP 配置时使用不可投递的预览发件人并加入 blocker。
@@ -59,4 +60,26 @@ prepare 会拒绝覆盖已有包。正文和附件内容嵌入 `draft.eml`；原
 - DATA 期间失败：标记 `delivery_uncertain_do_not_retry`，保留 Message-ID，不自动重发。先让用户查发信服务商记录/退信。程序崩溃留下的 `connecting` 记录也不能盲目重发，先核对进程及服务商记录。
 - 同内容、同发件人、同收件人、同主题再次执行会被持久日志拦截，即使重新 prepare 生成了不同 Date/Message-ID。用户明确要求重投且已排除重复风险时，人工核验后另行处理；不要自动删日志。
 
-纯文本 SMTP 邮件负责说明来意，推文正文以 Markdown/HTML/必要的 Word 和原图附件供编辑处理。发送 HTML 附件时建议 render 加 `--embed-images`，把文章目录内的 PNG/JPEG/GIF/WebP 嵌入 HTML，避免单独打开时缺图；原图仍单独附上方便编辑。远程图片不会自动下载或嵌入。
+## 给编辑的投稿信
+
+纯文本邮件简要说明研究主题、稿件标题及附件。附件说明统一写为：
+
+> 稿件 Word 版本随信附上。
+
+不要在对外正文中加入“人工审核后的 Word”“已通过模型自检”“批准记录”等内部流程描述。人工审核与发送批准继续保留在本地记录中，不能省略。
+
+可按以下结构起草，替换括号内容并删除不适用项后交付审核：
+
+```text
+您好，
+
+现投一篇关于〔研究主题〕的论文解读，稿件题目为《〔稿件标题〕》。
+文章介绍〔有来源支持的核心贡献〕。
+
+稿件 Word 版本随信附上。如需补充作者信息、配图或其他材料，请告知。
+
+感谢审阅！
+〔投稿者确认的署名及联系方式〕
+```
+
+Word 是正文附件；Markdown、HTML 与独立配图按编辑要求或投稿者选择补充，不自动附上工作记录。发送 HTML 附件时可用 `render --embed-images` 嵌入文章目录内的 PNG/JPEG/GIF/WebP，方便单独打开。远程图片不会自动下载或嵌入。
