@@ -1,5 +1,5 @@
 ---
-name: paper-wechat-submit
+name: paper2wechat
 description: 输入论文链接、选择公众号，生成适配该平台的可编辑 Word 推文供人工审核；明确确认最终稿后，通过本地 SMTP 投稿。支持机器之心、量子位、新智元、CVer、极市、我爱计算机视觉、PaperWeekly、VALSE 和图灵派对，适用于论文宣传与公众号投稿。
 ---
 
@@ -55,4 +55,4 @@ Codex 负责读论文与写稿，`scripts/submit.py` 负责采集、预览、SMT
 - `send PACKAGE` 默认仅离线校验；`send PACKAGE --execute` 还必须通过当前邮件快照绑定的 `human-approval.json` 检查才发信。Word、正文、附件或收件人改动后重新 prepare 并重新人工确认。未确认、目标未定、身份不明或事实待核对时交付完整 Word 稿供审核。允许未配置 SMTP 时先生成稿件与邮件预览。
 - 本地日志拦截重复投递。连接/登录失败可修复后重试；DATA 阶段不确定或已被服务器接受时不能自动重发，要按 Message-ID 查服务商记录。服务器接受不等于送达或录用。
 
-示例：`用 $paper-wechat-submit 把 https://xavierjiezou.github.io/ARGUS/ 写成机器之心投稿稿，先给我预览。`
+示例：`用 $paper2wechat 把 https://xavierjiezou.github.io/ARGUS/ 写成机器之心投稿稿，先给我预览。`

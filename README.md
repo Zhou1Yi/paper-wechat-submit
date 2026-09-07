@@ -1,4 +1,4 @@
-# Paper WeChat Submit
+# paper2wechat
 
 把论文链接转成适配目标公众号的中文 **Word 推文**，经过人工审核与明确确认后，再通过本地 SMTP 投稿。
 
@@ -61,7 +61,7 @@
 
 ```bash
 git clone https://github.com/Zhou1Yi/paper-wechat-submit.git \
-  "${CODEX_HOME:-$HOME/.codex}/skills/paper-wechat-submit"
+  "${CODEX_HOME:-$HOME/.codex}/skills/paper2wechat"
 ```
 
 如果同名技能目录已存在，先检查已有版本，避免覆盖本地修改。技能入口为根目录的 `SKILL.md`。
@@ -86,21 +86,21 @@ python -m pip install -r requirements-docx.txt
 **生成审核稿：**
 
 ```text
-用 $paper-wechat-submit 读取 https://xavierjiezou.github.io/ARGUS/，
+用 $paper2wechat 读取 https://xavierjiezou.github.io/ARGUS/，
 按机器之心的论文解读结构生成 Word 推文，供我人工审核，不要发送邮件。
 ```
 
 **参考指定样文：**
 
 ```text
-用 $paper-wechat-submit 把我的论文写成 PaperWeekly 推文。
+用 $paper2wechat 把我的论文写成 PaperWeekly 推文。
 参考我提供的同栏目文章，先生成 Word 供审核。
 ```
 
 **换公众号或比较版本：**
 
 ```text
-用 $paper-wechat-submit 将 ARGUS 分别按量子位和 PaperWeekly 档案改写，
+用 $paper2wechat 将 ARGUS 分别按量子位和 PaperWeekly 档案改写，
 各生成一份 Word 和风格对照说明，供人工审核，不发送。
 ```
 
@@ -145,7 +145,7 @@ python3 scripts/submit.py smtp-check
 
 `configure` 在本机终端隐藏输入授权码。不要将密码或授权码贴进聊天、README、Issue 或命令行参数。
 
-默认本地文件：
+为兼容已有邮箱设置和重复投递记录，配置目录保留原路径。默认本地文件：
 
 ```text
 ~/.config/paper-wechat-submit/
@@ -235,7 +235,7 @@ python3 scripts/submit.py send ./output/argus/package-v1 --execute
 ## 目录结构
 
 ```text
-paper-wechat-submit/
+paper2wechat/
 ├── SKILL.md
 ├── README.md
 ├── requirements-docx.txt

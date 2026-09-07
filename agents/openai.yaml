@@ -1,4 +1,4 @@
 interface:
-  display_name: "论文公众号投稿"
+  display_name: "paper2wechat"
   short_description: "从论文链接生成公众号 Word 稿，人工审核确认后再经本地 SMTP 投递"
-  default_prompt: "使用 $paper-wechat-submit 读取我的论文链接，选择公众号，生成 Word 推文供人工审核，确认后再准备邮件投稿。"
+  default_prompt: "使用 $paper2wechat 读取我的论文链接，选择公众号，生成 Word 推文供人工审核，确认后再准备邮件投稿。"
