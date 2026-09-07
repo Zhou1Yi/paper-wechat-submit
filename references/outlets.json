@@ -56,9 +56,10 @@
     ],
     "kind": "inquiry",
     "evidence": "official",
-    "note": "官网关于我们页明确将两个地址列为合作邮箱；未确认普通论文稿件直投用途。",
+    "note": "官网 about.html 的寻求报道/咨询合作按钮指向飞书表单；表单内容未能读取。未发现明确普通稿件投稿邮箱，现有两个邮箱仍只标合作咨询。",
     "sources": [
-      "https://aiera.com.cn/aiera/"
+      "https://aiera.com.cn/aiera/",
+      "https://aiera.com.cn/about.html"
     ],
     "checked_on": "2026-09-07",
     "style_profile": "styles/aiera.md",
@@ -66,7 +67,7 @@
     "other_public_channels": [
       {
         "url": "https://qzqs9kyge0.feishu.cn/share/base/form/shrcnboIJzYVAeO11P9p9vUf3sh",
-        "source": "https://aiera.com.cn/aiera/",
+        "source": "https://aiera.com.cn/about.html",
         "status": "official_link_form_contents_unread"
       }
     ],
@@ -79,17 +80,25 @@
     "emails": [],
     "kind": "manual",
     "evidence": "unverified",
-    "note": "未确认统一投稿邮箱，也未实际验证公众号后台能否接收稿件。CVer/CVerNews 仅作为查找公众号及咨询的手动入口；旧助手微信或技术群不等于接稿渠道。",
+    "note": "Amusi 的 GitHub 主页明确关联 CVer 并提供微信文章入口，但未列投稿邮箱。尚未找到可核实的统一邮箱；通过公众号确认编辑入口，不将技术交流群助手当成投稿邮箱。",
     "sources": [
       "https://cloud.tencent.com/developer/article/2697360",
       "https://cloud.tencent.com/developer/article/2697358",
-      "https://blog.csdn.net/amusi1994/article/details/136104827"
+      "https://blog.csdn.net/amusi1994/article/details/136104827",
+      "https://github.com/amusi"
     ],
     "checked_on": "2026-09-06",
     "style_profile": "styles/cver.md",
     "style_status": "limited_reference",
     "last_reviewed_on": "2026-09-07",
-    "contact_review_status": "manual_route_unverified"
+    "contact_review_status": "manual_route_unverified",
+    "other_public_channels": [
+      {
+        "url": "https://mp.weixin.qq.com/s/EGiZz-Mt-8pHG7Sq_OA_UA",
+        "source": "https://github.com/amusi",
+        "status": "owner_link_contents_unverified"
+      }
+    ]
   },
   {
     "id": "cvmart",
@@ -99,7 +108,7 @@
     ],
     "kind": "inquiry",
     "evidence": "official",
-    "note": "官方域名搜索索引列 developer@cvmart.net 为联系我们邮箱；直接页面为 JavaScript 壳。可确认一般联系依据，未确认公众号直投用途。",
+    "note": "官方2020原创作者计划明确投稿方式为添加微信 fengcall19，备注姓名-投稿；后续转载亦出现同号，当前可用性未确认。developer@cvmart.net 仍仅为一般咨询邮箱，未发现新的明确投稿邮箱。",
     "sources": [
       "https://www.cvmart.net/community/detail/2872",
       "https://www.cvmart.net/community/detail/1600"
@@ -167,15 +176,25 @@
     ],
     "kind": "inquiry",
     "evidence": "official",
-    "note": "VALSE 2026 官方页面搜索索引在联系我们栏目列此邮箱；直接页面未取得正文。一般联系用途有依据，公众号稿件接收范围仍需确认。",
+    "note": "官方2025论文速览征集采用问卷星报名，截止2025-04-11，已过期；未列专用投稿邮箱。valse_official@163.com 保留为一般咨询，需索取当期征集方式。",
     "sources": [
-      "https://valser.org/2026/"
+      "https://valser.org/2026/",
+      "https://valser.org/article-851-1.html"
     ],
     "checked_on": "2026-09-06",
     "style_profile": "styles/valse.md",
     "style_status": "limited_reference",
     "last_reviewed_on": "2026-09-07",
-    "contact_review_status": "official_index_inquiry"
+    "contact_review_status": "official_index_inquiry",
+    "other_public_channels": [
+      {
+        "url": "https://www.wjx.top/vm/wG4CEcx.aspx#",
+        "source": "https://valser.org/article-851-1.html",
+        "purpose": "paper_video_signup",
+        "deadline": "2025-04-11",
+        "status": "expired_do_not_submit"
+      }
+    ]
   },
   {
     "id": "turing-party",

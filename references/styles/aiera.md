@@ -30,4 +30,4 @@
 
 ## 渠道
 
-[官方介绍](https://aiera.com.cn/aiera/) 中 `daijia@aiera.com.cn`、`xiaoyunhong@aiera.com.cn` 标为合作邮箱。官网“寻求报道”指向[飞书表单](https://qzqs9kyge0.feishu.cn/share/base/form/shrcnboIJzYVAeO11P9p9vUf3sh)，已核对链接出处，但表单内容未核验，不能确认其字段与接稿要求。合作邮箱保持咨询用途。
+官网 about.html 的寻求报道/咨询合作按钮指向飞书表单；表单内容未能读取。未发现明确普通稿件投稿邮箱，现有两个邮箱仍只标合作咨询。 [来源](https://aiera.com.cn/about.html)。详细入口见 [outlets.json](../outlets.json)。

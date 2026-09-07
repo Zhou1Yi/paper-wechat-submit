@@ -30,4 +30,4 @@
 
 ## 渠道
 
-[官网联系信息](https://www.cvmart.net/community/detail/2872) 的 `developer@cvmart.net` 为联系邮箱，`cvmart3` 为一般微信联系。2020 年作者计划中的 `fengcall19` 只作历史投稿线索，未核实现用。邮箱保持咨询用途，不能自动带全文投递。
+官方2020原创作者计划明确投稿方式为添加微信 fengcall19，备注姓名-投稿；后续转载亦出现同号，当前可用性未确认。developer@cvmart.net 仍仅为一般咨询邮箱，未发现新的明确投稿邮箱。 [来源](https://www.cvmart.net/community/detail/1600)。详细入口见 [outlets.json](../outlets.json)。

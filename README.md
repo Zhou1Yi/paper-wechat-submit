@@ -123,12 +123,12 @@ python -m pip install -r requirements-docx.txt
 | --- | --- | --- |
 | 机器之心 | z@jqzx.ai | 官网索引可核对地址归属，AIxiv 栏目截图支持研究投稿用途；[官网入口](https://www.jiqizhixin.com/events)、[AIxiv 栏目](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=MzA3MzI4MjgzMw==&scene=1&album_id=4328536051397804037&count=3#wechat_redirect)。 |
 | 量子位 | ai@qbitai.com | **官方明确投稿邮箱**；主题注明“投稿”或“爆料”。[官方联系页](https://www.qbitai.com/联系我们) |
-| 新智元 | daijia@aiera.com.cn / xiaoyunhong@aiera.com.cn | **官方合作邮箱**；先咨询接稿方式。[官方说明](https://aiera.com.cn/aiera/) |
-| CVer | 微信搜索 CVer / CVerNews，尝试后台咨询 | **投稿入口待确认**；尚无已核实的统一邮箱，后台是否接稿也未确认。[账号参考](https://openi.cn/sites/151148.html) |
-| 极市平台 | developer@cvmart.net | **官方一般联系邮箱**，依据官网搜索索引；不等于稿件直投邮箱。[官网联系信息](https://www.cvmart.net/community/detail/2872) |
+| 新智元 | [官网报道申请入口](https://aiera.com.cn/about.html)；合作咨询：daijia@aiera.com.cn / xiaoyunhong@aiera.com.cn | 官网引导至飞书表单，未发现专用投稿邮箱；表单内容需打开后确认。 |
+| CVer | 微信公众号 CVer；[运营者主页](https://github.com/amusi) | 未查到明确投稿邮箱；通过公众号确认接稿入口。 |
+| 极市平台 | 投稿微信：fengcall19（历史）；咨询：developer@cvmart.net | [官方作者计划](https://www.cvmart.net/community/detail/1600)明确微信投稿，备注“姓名-投稿”；当前可用性待确认，未发现专用投稿邮箱。 |
 | 我爱计算机视觉 | amos@52cv.net | **历史投稿邮箱，当前状态待确认**；可追溯至署名转载的投稿说明。[历史来源](https://www.yisu.com/jc/591097.html) |
 | PaperWeekly | hr@paperweekly.site | **历史投稿邮箱，当前状态待确认**；多篇投稿说明列出同址。[投稿须知](https://www.sohu.com/a/227267042_500659)、[后续署名内容](https://www.sohu.com/a/808033098_121119001) |
-| VALSE | valse_official@163.com | **官方一般联系邮箱**，依据会议官网搜索索引；论文分享接收范围需另行咨询。[官方页面](https://valser.org/2026/) |
+| VALSE | 咨询：valse_official@163.com | [论文速览征集](https://valser.org/article-851-1.html)采用报名表，已于2025-04-11截止；需咨询当期入口，未发现专用投稿邮箱。 |
 | [图灵派对](https://mp.weixin.qq.com/s/kx3WiogHaDWHVBH86KZMoQ) | xuechaozou@foxmail.com（候选） | **公众号接稿用途待确认**；个人主页公开列此地址，尚缺其与图灵派对的公开关联。[个人主页](https://github.com/XavierJiezou) |
 
 合作和一般联系邮箱默认用于咨询。历史地址及候选地址需要官方复核或投稿者明确确认后使用。详细依据与访问限制见[渠道核查说明](references/contact-audit-2026-09-07.md)和[渠道资料](references/outlets.json)。所有邮件仍经人工确认，多平台分别发送。
