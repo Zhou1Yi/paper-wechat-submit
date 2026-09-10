@@ -133,7 +133,7 @@ python -m pip install -r requirements-docx.txt
 | 我爱计算机视觉 | amos@52cv.net | **历史投稿邮箱，当前状态待确认**；可追溯至署名转载的投稿说明。[历史来源](https://www.yisu.com/jc/591097.html) |
 | PaperWeekly | hr@paperweekly.site | **历史投稿邮箱，当前状态待确认**；多篇投稿说明列出同址。[投稿须知](https://www.sohu.com/a/227267042_500659)、[后续署名内容](https://www.sohu.com/a/808033098_121119001) |
 | VALSE | 咨询：valse_official@163.com | [论文速览征集](https://valser.org/article-851-1.html)采用报名表，已于2025-04-11截止；需咨询当期入口，未发现专用投稿邮箱。 |
-| [图灵派对](https://mp.weixin.qq.com/s/kx3WiogHaDWHVBH86KZMoQ) | xuechaozou@foxmail.com（候选） | **公众号接稿用途待确认**；个人主页公开列此地址，尚缺其与图灵派对的公开关联。[个人主页](https://github.com/XavierJiezou) |
+| 图灵派对 | xuechaozou@foxmail.com | **公众号接稿用途待确认**；个人主页公开列此地址，尚缺其与图灵派对的公开关联。[个人主页](https://github.com/XavierJiezou) |
 
 合作和一般联系邮箱默认用于咨询。历史地址及候选地址需要官方复核或投稿者明确确认后使用。详细依据与访问限制见[渠道核查说明](references/contact-audit-2026-09-07.md)和[渠道资料](references/outlets.json)。所有邮件仍经人工确认，多平台分别发送。
 
