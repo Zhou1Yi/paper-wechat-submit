@@ -135,7 +135,7 @@ def connect(c, password):
 def configure(args):
     p = Path(args.config).expanduser()
     c = read_json(p) if p.exists() else config_template()
-    for key, label in [('from_email', '发件邮箱'), ('from_name', '署名（可暂空）'),
+    for key, label in [('from_email', '发件邮箱'), ('from_name', '发件显示名称（可暂空）'),
                        ('host', 'SMTP 服务器'), ('security', '加密 ssl/starttls'),
                        ('port', '端口'), ('username', '登录用户名')]:
         default = c.get(key, '') or (c.get('from_email', '') if key == 'username' else '')

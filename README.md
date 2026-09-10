@@ -160,6 +160,8 @@ QQ 邮箱可使用 `smtp.qq.com`、465、`ssl`，用户名为完整邮箱地址�
 
 `smtp-check` 只验证连接与登录，**不会发送测试邮件**。
 
+发件地址、显示名称和 SMTP 登录账号可分别配置：`from_email` 决定对外发件地址，`from_name` 决定显示名称，`username` 用于认证。使用已绑定的邮箱别名时，可保留原登录账号。个人设置只保存在本地 `smtp.json`，不进入共享仓库；详细说明见[发件身份配置](references/smtp.md#发件地址与显示名称)。
+
 ## 脚本使用
 
 ```bash
@@ -242,7 +244,7 @@ paper2wechat/
 ├── agents/openai.yaml
 ├── references/
 │   ├── writing.md
-│   ├── styles/  # 九个平台的写作指南与来源范围
+│   ├── styles/  # 八个平台的写作指南与来源范围
 │   ├── calibration-2026-09-06.md
 │   ├── outlets.json
 │   └── smtp.md
