@@ -2,7 +2,6 @@
 
 把论文链接转成适配目标公众号的中文 **Word 推文**，经过人工审核与明确确认后，再通过本地 SMTP 投稿。
 
-这是一个 Codex Skill，支持机器之心、量子位、新智元、CVer、极市平台、我爱计算机视觉、PaperWeekly、VALSE 和图灵派对。它用于论文宣传与公众号投稿，不是学术期刊投稿系统。
 
 > **默认停在 Word 人工审核阶段。** 配置邮箱、验证登录或最初提出投稿需求，都不等于审核后的发送确认。没有当前邮件版本的人工确认记录，发送程序会拒绝投递。
 
@@ -46,7 +45,6 @@
 | [极市平台](references/styles/cvmart.md) | 侧重系统设计、评测条件与使用边界；复现教程另附环境、命令和实测记录。 |
 | [我爱计算机视觉](references/styles/52cv.md) | 用直觉和方法图解串起研究设计、实验结果与技术点评。 |
 | [PaperWeekly](references/styles/paperweekly.md) | 完整展开动机、设计、训练目标、评测协议、消融与局限，强调论证过程。 |
-| [VALSE](references/styles/valse.md) | 默认准备研究分享提案、讲解提纲及论文资源；按栏目要求补充作者视频和摘要。 |
 | [图灵派对](references/styles/turing-party.md) | 采用问题引入、方法图解、实验证据与讨论的研究解读结构。 |
 
 各平台指南提供结构、图文安排和来源说明。共同排版建议包括：“论文与项目”先放项目页的论文与作者截图，无项目页时使用 PDF 截图，再依次列出论文标题、论文地址、项目主页、作者列表；对比图在问题说明后出现；流程图跟随模块介绍；实验截图后紧接结果分析。标题、格式和篇幅可按作者要求调整。
@@ -108,7 +106,6 @@ python -m pip install -r requirements-docx.txt
 各生成一份 Word 和风格对照说明，供人工审核，不发送。
 ```
 
-选择其他平台会重新安排导语、章节和技术解释。VALSE 默认是研究分享提案与讲解提纲，需要完整长文时会另附扩展解读。无可靠投稿渠道也能先完成 Word。
 
 **人工修改后：**
 
@@ -132,8 +129,7 @@ python -m pip install -r requirements-docx.txt
 | 极市平台 | 投稿微信：fengcall19（历史）；咨询：developer@cvmart.net | [官方作者计划](https://www.cvmart.net/community/detail/1600)明确微信投稿，备注“姓名-投稿”；当前可用性待确认，未发现专用投稿邮箱。 |
 | 我爱计算机视觉 | amos@52cv.net | **历史投稿邮箱，当前状态待确认**；可追溯至署名转载的投稿说明。[历史来源](https://www.yisu.com/jc/591097.html) |
 | PaperWeekly | hr@paperweekly.site | **历史投稿邮箱，当前状态待确认**；多篇投稿说明列出同址。[投稿须知](https://www.sohu.com/a/227267042_500659)、[后续署名内容](https://www.sohu.com/a/808033098_121119001) |
-| VALSE | 咨询：valse_official@163.com | [论文速览征集](https://valser.org/article-851-1.html)采用报名表，已于2025-04-11截止；需咨询当期入口，未发现专用投稿邮箱。 |
-| 图灵派对 | xuechaozou@foxmail.com | **公众号接稿用途待确认**；个人主页公开列此地址，尚缺其与图灵派对的公开关联。[个人主页](https://github.com/XavierJiezou) |
+| [图灵派对](https://mp.weixin.qq.com/s/kx3WiogHaDWHVBH86KZMoQ) | xuechaozou@foxmail.com（候选） | **公众号接稿用途待确认**；个人主页公开列此地址，尚缺其与图灵派对的公开关联。[个人主页](https://github.com/XavierJiezou) |
 
 合作和一般联系邮箱默认用于咨询。历史地址及候选地址需要官方复核或投稿者明确确认后使用。详细依据与访问限制见[渠道核查说明](references/contact-audit-2026-09-07.md)和[渠道资料](references/outlets.json)。所有邮件仍经人工确认，多平台分别发送。
 

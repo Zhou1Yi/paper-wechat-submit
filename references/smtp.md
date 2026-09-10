@@ -38,7 +38,6 @@ QQ 邮箱配置：`smtp.qq.com`、465、`ssl`、完整邮箱作为用户名、SM
 }
 ```
 
-- `mode`: `submission` 全文投稿或 `inquiry` 咨询。新智元、极市、VALSE 的默认邮箱只能用于咨询。CVer 无默认邮箱，生成手动联系材料；不要猜邮箱。
 - `recipient_basis`: `registry` 使用库中最近 30 天核验的官方地址；`official_rechecked` 用当次核实的官方地址，并写 `recipient_evidence`（具体 URL、核验日期及“投稿邮箱”证据）；`user_confirmed` 记录用户明确确认的地址及用途，也必须写 `recipient_evidence`。该字段是记录证据，不自行证明用户授权发送。
 
 非官方核验的地址（如图灵派对）不能直接使用 `registry` 投稿。取得当前投稿者的明确地址确认时，使用 `user_confirmed` 并写明地址及用途；或者取得官方依据后使用 `official_rechecked`。共享仓库中的历史确认不替代当前投稿者的确认。两者均不等于最终邮件的发送许可。

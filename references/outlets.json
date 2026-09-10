@@ -169,34 +169,6 @@
     "contact_review_status": "historical_secondary_submission"
   },
   {
-    "id": "valse",
-    "name": "VALSE",
-    "emails": [
-      "valse_official@163.com"
-    ],
-    "kind": "inquiry",
-    "evidence": "official",
-    "note": "官方2025论文速览征集采用问卷星报名，截止2025-04-11，已过期；未列专用投稿邮箱。valse_official@163.com 保留为一般咨询，需索取当期征集方式。",
-    "sources": [
-      "https://valser.org/2026/",
-      "https://valser.org/article-851-1.html"
-    ],
-    "checked_on": "2026-09-06",
-    "style_profile": "styles/valse.md",
-    "style_status": "limited_reference",
-    "last_reviewed_on": "2026-09-07",
-    "contact_review_status": "official_index_inquiry",
-    "other_public_channels": [
-      {
-        "url": "https://www.wjx.top/vm/wG4CEcx.aspx#",
-        "source": "https://valser.org/article-851-1.html",
-        "purpose": "paper_video_signup",
-        "deadline": "2025-04-11",
-        "status": "expired_do_not_submit"
-      }
-    ]
-  },
-  {
     "id": "turing-party",
     "name": "图灵派对",
     "emails": [
